@@ -6,7 +6,7 @@ This is extensions for [detekt](https://github.com/arturbosch/detekt).
 ### build.gradle
 ```groovy
 dependencies {
-    detekt "com.github.duck8823:detekt-extensions:0.0.1-SNAPSHOT"
+    detekt "com.github.duck8823:detekt-extensions:0.0.1"
 }
 ```
 
@@ -23,7 +23,7 @@ dependencies {
         <dependency>
             <groupId>com.github.duck8823</groupId>
             <artifactId>detekt-extensions</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <version>0.0.1</version>
         </dependency>
     </dependencies>
 </plugin>
