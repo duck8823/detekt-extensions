@@ -4,6 +4,14 @@ This is extensions for [detekt](https://github.com/arturbosch/detekt).
 
 ## Usage
 ### build.gradle
+Add JitPack repository
+```groovy
+repositories {
+    maven { url 'https://jitpack.io' }
+}
+```
+
+and add dependency
 ```groovy
 dependencies {
     detekt "com.github.duck8823:detekt-extensions:0.0.1"
@@ -11,6 +19,17 @@ dependencies {
 ```
 
 ### pom.xml
+Add JitPack repository to `pluginRepository`
+```xml
+<pluginRepositories>
+    <pluginRepository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+    </pluginRepository>
+</pluginRepositories>
+```
+
+and add dependency to `dependencies` of detekt plugin
 ```xml
 <plugin>
     <groupId>com.github.ozsie</groupId>
