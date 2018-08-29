@@ -65,7 +65,7 @@ class BuildFailureExtReport : ConsoleReport() {
             thresholdMcc.reached(mcc) -> throw BuildFailure("Build failure threshold of " +
                     "$thresholdMcc reached with $mcc McCabe complexity!")
             thresholdSmells.reached(smells) -> throw BuildFailure("Build failure threshold of " +
-                    "$thresholdSmells reached with $loc number of total code smells!")
+                    "$thresholdSmells reached with $smells number of total code smells!")
             thresholdMccPerThousandLLOC.reached(mccPerThousandLines) ->
                 throw BuildFailure("Build failure threshold of $thresholdMccPerThousandLLOC  " +
                         "reached with $mccPerThousandLines mcc per 1000 lloc!")
