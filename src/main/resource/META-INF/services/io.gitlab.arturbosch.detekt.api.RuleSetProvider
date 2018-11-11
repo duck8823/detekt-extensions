@@ -1,1 +1,1 @@
-com.github.duck8823.detekt.extensions.rules.ExtensionsRuleSetProvider
+com.github.duck8823.detekt.extensions.ExtensionsRuleSetProvider
