@@ -14,7 +14,7 @@ repositories {
 and add dependency
 ```groovy
 dependencies {
-    detekt "com.github.duck8823:detekt-extensions:0.0.1"
+    detekt "com.github.duck8823:detekt-extensions:0.0.2"
 }
 ```
 
@@ -42,14 +42,34 @@ and add dependency to `dependencies` of detekt plugin
         <dependency>
             <groupId>com.github.duck8823</groupId>
             <artifactId>detekt-extensions</artifactId>
-            <version>0.0.1</version>
+            <version>0.0.2</version>
         </dependency>
     </dependencies>
 </plugin>
 ```
 
 ## Extensions
-### ComplexityBuildFailureReport
+### Rules
+
+#### RequireBracesIfStatements
+A rule that If statements needs braces.
+
+NG:
+```kotlin
+if (a == b)
+    throw IllegalStatementException()
+```
+
+OK:
+```kotlin
+if (a == b) {
+    throw IllegalStatementException()
+}
+```
+
+
+### Reports
+#### ComplexityBuildFailureReport
 This extension support more extended conditions to build failure.  
 You can add failure threshold that reported by ComplexityReport (that is built in detekt).  
 By default, Each thresholds is `Int.MAX_VALUE`.  
